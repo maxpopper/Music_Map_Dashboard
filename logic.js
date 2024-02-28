@@ -13,35 +13,35 @@ let myMap = L.map("map", {
   }).addTo(myMap);
 
 
+console.log(us_can);
 
-// Load the client library
-gapi.load('client', init);
+let us_can_center = [38.6270, -90.1994];
+let korea_center = [35.9078, 127.7669];
 
-// Initialize the client library
-function init() {
-  gapi.client.init({
-    apiKey: 'AIzaSyBDJs5jiIFx9IQrqIphkIqK7a7iazNi7Fg',
-    discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
-  }).then(() => {
-    // Use the API here, for example:
-    getChannelStatistics('UCqECaJ8Gagnn7YCbPEzWH6g');
-  }).catch(err => {
-    console.error('Error initializing API client', err);
-  });
-}
+for (let i=0; i < us_can.length; i++) {
+  let city = us_can[i];
+  L.marker(city.coords)
+    .bindPopup(`<h1>${city.Artist}</h1> 
+    <p ${city.img_code} ></p>
+    <hr> 
+    <h3>From: ${city.from.toLocaleString()}</h3>
+    <h3>Subscribers: ${city.suscribers.toLocaleString()}</h3>
+    <h3>Total Views: ${city.total_views.toLocaleString()}</h3>
+    `)
+    .addTo(myMap);
+};
 
-// Function to get channel statistics
-function getChannelStatistics(channelId) {
-  gapi.client.youtube.channels.list({
-    part: 'statistics',
-    id: channelId
-  }).then(response => {
-    const channel = response.result.items[0];
-    const subscriberCount = channel.statistics.subscriberCount;
-    const viewCount = channel.statistics.viewCount;
-    console.log(`Subscriber Count: ${subscriberCount}`);
-    console.log(`Total Views: ${viewCount}`);
-  }).catch(err => {
-    console.error('Error fetching channel statistics', err);
-  });
-}
+for (let i=0; i < korea.length; i++) {
+  let city = korea[i];
+  L.marker(city.coords)
+    .bindPopup(`<h1>${city.Artist}</h1> 
+    <p ${city.img_code} ></p>
+    <hr> 
+    <h3>From: ${city.from.toLocaleString()}</h3>
+    <h3>Subscribers: ${city.suscribers.toLocaleString()}</h3>
+    <h3>Total Views: ${city.total_views.toLocaleString()}</h3>
+    `)
+    .addTo(myMap);
+};
+
+{/* <p align='center'> <img src='images/beyonce.jpeg' width='200' height='200' ></p>  */}
