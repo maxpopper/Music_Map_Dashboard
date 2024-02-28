@@ -1,7 +1,7 @@
 // Creating our initial map object:
 // We set the longitude, latitude, and starting zoom level.
 // This gets inserted into the div with an id of "map".
-console.log(latin_america_region)
+console.log(latin_africa_regions)
 
 let myMap = L.map("map", {center: [10, 13],zoom: 2});
   
