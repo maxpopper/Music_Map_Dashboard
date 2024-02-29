@@ -106,7 +106,11 @@ var regions = {
 };
 
 for (var region in regions) {
-  L.polygon(regions[region].bounds, {color: regions[region].color}).addTo(myMap).bindPopup(region);
+  let polygon = L.polygon(regions[region].bounds, {color: regions[region].color}).addTo(myMap).bindPopup(region);
+  polygon.on('click', function (event) {
+    myMap.fitBounds(polygon.getBounds())
+  });
+
 };
 
 function displayMetrics(event) {
@@ -114,15 +118,15 @@ function displayMetrics(event) {
   alert("Metrics for " + region);
 };
 
-for (var region in regions) {
-  var bounds = regions[region].bounds;
-  var polygon = L.polygon(bounds, {color: "transparent"}).addTo(myMap);
-  polygon.on('click', function (event) {
-    myMap.fitBounds(polygon.getBounds())
-  });
-  polygon.bindPopup(region);
-  // polygon.on('click', displayMetrics);
-};
+// for (var region in regions) {
+//   var bounds = regions[region].bounds;
+//   var polygon = L.polygon(bounds, {color: "transparent"}).addTo(myMap);
+//   polygon.on('click', function (event) {
+//     myMap.fitBounds(polygon.getBounds())
+//   });
+//   polygon.bindPopup(region);
+//   // polygon.on('click', displayMetrics);
+// };
 
       //   click: function(event) {
       //     myMap.fitBounds(event.target.getBounds());
