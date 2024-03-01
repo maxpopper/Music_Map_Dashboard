@@ -7,37 +7,48 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
-for (let i=0; i < us_can.length; i++) {
-  let city = us_can[i];
-  L.marker(city.coords)
-    .bindPopup(`<h1>${city.Artist}</h1> 
-    <p ${city.img_code} ></p>
-    <hr> 
-    <h3>From: ${city.from.toLocaleString()}</h3>
-    <h3>Subscribers: ${city.str_suscribers.toLocaleString()}</h3>
-    <h3>Total Views: ${city.str_views.toLocaleString()}</h3>
-    <h3>Number of Videos: ${city.str_videos.toLocaleString()}</h3>
-    <h3>Avg. Views per Video: ${city.str_Average_views_per_video.toLocaleString()}</h3>
-    <h3>Channel Creation Date: ${city.channel_creation_date.toLocaleString()}</h3>
-    `)
-    .addTo(myMap);
-};
+// Define the marker layers
+var markers = L.layerGroup();
 
-for (let i=0; i < korea.length; i++) {
-  let city = korea[i];
-  L.marker(city.coords)
-    .bindPopup(`<h1>${city.Artist}</h1> 
-    <p ${city.img_code} ></p>
-    <hr> 
-    <h3>From: ${city.from.toLocaleString()}</h3>
-    <h3>Subscribers: ${city.str_suscribers.toLocaleString()}</h3>
-    <h3>Total Views: ${city.str_views.toLocaleString()}</h3>
-    <h3>Number of Videos: ${city.str_videos.toLocaleString()}</h3>
-    <h3>Avg. Views per Video: ${city.str_Average_views_per_video.toLocaleString()}</h3>
-    <h3>Channel Creation Date: ${city.channel_creation_date.toLocaleString()}</h3>
-    `)
-    .addTo(myMap);
-};
+// Function to add markers
+function addMarkers(regionData) {
+  for (let i = 0; i < regionData.length; i++) {
+      let city = regionData[i];
+      let marker = L.marker(city.coords)
+          .bindPopup(`<h2><center>${city.Artist}</h2> 
+              <p ${city.img_code} ></p>
+              <hr> 
+              <h3>From:         ${city.from}</h2>
+              <h3>Total Videos: ${city.str_videos.toLocaleString()}</h3>
+              <h3>Subscribers:  ${city.str_suscribers.toLocaleString()}</h3>
+              <h3>Total Views:  ${city.str_views.toLocaleString()}</h3>
+              <h3>Avg views/video: ${city.str_Average_views_per_video.toLocaleString()}</h3>
+              <h3>Channel Creation Date: ${city.channel_creation_date.toLocaleString()}</h3>
+              `);
+      marker.zoomedIn = false; // Track zoom state
+      marker.on('click', function(event) {
+          if (marker.zoomedIn) {
+              myMap.setView([0, 0], 2); // Zoom out if already zoomed in
+              marker.closePopUp();
+          } else {
+              myMap.setView(event.latlng, 10); // Zoom in if not already zoomed in
+              marker.openPopup;
+          }
+          marker.zoomedIn = !marker.zoomedIn; // Toggle zoom state
+          marker.openPopup();
+      });
+      markers.addLayer(marker);
+  }
+}
+
+// Add markers for US/Canada
+addMarkers(us_can);
+
+// Add markers for South Korea
+addMarkers(korea);
+
+// Add marker layer to map
+myMap.addLayer(markers);
 
 var regions = {
   "US/Canada": {color: "green", bounds: [
@@ -67,15 +78,40 @@ var regions = {
   ]}
 };
 
-for (var region in regions) {
-  let polygon = L.polygon(regions[region].bounds, {color: regions[region].color}).addTo(myMap).bindPopup(region);
-  polygon.on('click', function (event) {
-    myMap.fitBounds(polygon.getBounds())
-  });
-
-};
-
-function displayMetrics(event) {
+// Function to handle region clicks
+function onRegionClick(event) {
   var region = event.target.getPopup().getContent();
   alert("Metrics for " + region);
-};
+}
+
+// Add GeoJSON layers for highlighting regions
+for (var region in regions) {
+  var bounds = regions[region].bounds;
+  var polygon = L.polygon(bounds, {color: regions[region].color}).addTo(myMap);
+  polygon.on('click', onRegionClick);
+  polygon.bindPopup(region);
+}
+
+// Zoom to the clicked region when clicked on a region
+function zoomToRegion(event) {
+  myMap.fitBounds(event.target.getBounds());
+}
+
+// Zoom out when clicked anywhere else on the map
+myMap.on('click', function(event) {
+  myMap.setView([0, 0], 2);
+});
+
+
+// for (var region in regions) {
+//   let polygon = L.polygon(regions[region].bounds, {color: regions[region].color}).addTo(myMap).bindPopup(region);
+//   polygon.on('click', function (event) {
+//     myMap.fitBounds(polygon.getBounds())
+//   });
+
+// };
+
+// function displayMetrics(event) {
+//   var region = event.target.getPopup().getContent();
+//   alert("Metrics for " + region);
+// };
