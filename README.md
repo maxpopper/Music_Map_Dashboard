@@ -4,9 +4,9 @@
 [Website](...)
 
 ## Description
-The aim of this project is to showcase the global popularity of international music, transcending borders and continents like never before. Our objective is to spotlight some of the biggest artists from five different regions and provide context for their popularity.
+This project aims to showcase the global popularity of international music, transcending borders and continents like never before. We aim to spotlight some of the biggest artists from five different regions and provide context for their popularity.
 
-### <strong> 5 Regions World wide Map Example: </center> </strong>
+### <strong> 5 Regions Worldwide Map Example: </center> </strong>
 > Regions: 
 - US/Canada
 - Latin America
@@ -32,10 +32,10 @@ The aim of this project is to showcase the global popularity of international mu
 - [Contact](#contact)
 
 ## Installations
-In order to get the make this project work is crucial to follow the next steps:
+In order to get the make this project work, it is crucial to follow the next steps:
 
 > <center> Youtube API:
-Youtube API is utilized to gather the data. Follow these steps to obtain your API Key and access Youtube data:
+YouTube API is utilized to gather the data. Follow these steps to obtain your API Key and access YouTube data:
 
 - Register at the following link to generate your API key and other functionalities: [Google Cloud Console](https://console.cloud.google.com/)
 - After registration, navigate to **`Dashboard`**, then **`Create Project`**, then go to **`Library`** and activate **`Youtube Data API v3`**.
@@ -49,18 +49,18 @@ This section covers the installation of Python packages required to access and r
 
 Prerequisites:
 
-Open your Command Line or Git Bash and navigate to the folder where your file is located, then run the following commands:
+Open your Command-Line or Git Bash and navigate to the folder where your file is located, then run the following commands:
 
     pip install --upgrade google-api-python-client
 
 > <center> Jupyter Notebook
 
-Once the packages are installed, import them into your Jupyter notebook file using the following line:  ``` from googleapiclient.discovery import build ``` then in the next cell make reference to your API key <strong> `api_key='xxxxx'` </strong> and the desired Channel ID that you would like to scrape (to access the channel ID you need to go to the artist main page channel and click in ` > ` normally is located it 3 lines below the artist name or at the right of the artist picture) then find and click<strong> `Share Channel` </strong> - <strong> `Copy channel ID` </strong>.
+Once the packages are installed, import them into your Jupyter Notebook file using the following line:  ``` from googleapiclient.discovery import build ``` Then in the next cell make reference to your API key <strong> `api_key='xxxxx'` </strong> and the desired Channel ID that you would like to scrape (to access the channel ID you need to go to the artist main page channel and click in ` > ` normally is located it 3 lines below the artist name or at the right of the artist picture) then find and click<strong> `Share Channel` </strong> - <strong> `Copy channel ID` </strong>.
 
 here is our example of the (Import, Api_key, Channel ID)
 <img src="images\API, Channel ID.png"  style="width:800px"> <hr>
 
-> Note: after we access the data, manipulate it, and get the disired results we copy the data from Jupyter notebook and import it in javascript to visualize the artist metrics and regions.
+> Note: after we access the data, manipulate it, and get the desired results we copy the data from Jupyter Notebook and import it in javascript to visualize the artist metrics and regions.
 
 > <center> HTML Scripts References:
 - Youtube API: 
@@ -79,15 +79,15 @@ here is our example of the (Import, Api_key, Channel ID)
     - ` <div id="map"></div> `
 
 ## Presentation
-In this seccion you can find the presentation of our project that you can download it and explore it by yourself.
+In this section, you can find the presentation of our project that you can download it and explore by yourself.
 [Download PDF](https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/Presentation%20PDF/Presentation.pdf)
 
 
 ## DataSources
-The Datasource that we used to get the information in order to visualize our artist metrics, markers and outlined 5 different regions was Youtube API.
+The Datasource that we used to get the information to visualize our artist metrics, markers and outlined 5 different regions was Youtube API.
 
 ## Interaction
-To interact with our project we invite you to click in the following link (xxxxx) and you will experience our map display with the 5 different regions and 4 markers per region where you can click in any marker and inmediately see the artist metric information with their respective headshot, if you click back in the same marker it will zoom out and you can repeat the process with any region and marker you would like to get inform from.
+To interact with our project we invite you to click on the following link (xxxxx) and you will experience our map display with the 5 different regions and 4 markers per region where you can click on any marker and immediately see the artist metric information with their respective headshot, if you click back in the same marker it will zoom out and you can repeat the process with any region and marker you would like to get inform from.
 
 ## Region
 >Region/Artists:
@@ -121,19 +121,19 @@ To interact with our project we invite you to click in the following link (xxxxx
 - EXO
 
 ## Collection
-Here is a brief review of our Data Collection Process from collection the data to overall visualization map.
+Here is a brief review of our Data Collection Process from the collection of the data to the overall visualization map.
 
 <img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Data%20Collection%20Process.png"  style="width:700px"> <hr>
 
 
 ## Credits
-The research support to make this challenge succesful comes from edX Tutors, Chat Gpt, AskBCS, Teachers, TA, Google, [Youtube link](https://www.youtube.com/watch?v=SwSbnmqk3zY) Max Popper, David Castano, Kimani Phillips
+The research support to make this challenge successful comes from edX Tutors, Chat Gpt, AskBCS, Teachers, TA, Google, [Youtube link](https://www.youtube.com/watch?v=SwSbnmqk3zY) Max Popper, David Castano, Kimani Phillips
 
 ## Ethical
-This project is created based on public artist information that any person could get access from youtube.com. we as a creators are managing the data with ethical maner not exposing any extra information that a normal person could get access to.
+This project is created based on public artist information that any person could get access to from youtube.com. we as creators are ethically managing the data not exposing any extra information that a normal person could get access to.
 
 ## Contact
-If there are any questions of concerns, we can be reached at:
+If there are any questions or concerns, we can be reached at:
 
 > David Castano 
 - [Github: Davidcastanoe](https://github.com/Davidcastanoe)
