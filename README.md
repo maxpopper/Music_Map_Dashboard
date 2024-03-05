@@ -1,4 +1,4 @@
-# <center> Music Map Dashboard
+# <center> Music Map Dashboard </center>
 
 ## Website
 [Website](...)
