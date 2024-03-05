@@ -1,5 +1,4 @@
 # <center> Music Map Dashboard
-![MIT](https://img.shields.io/badge/License-MIT-blue)
 
 ## Website
 [Website](...)
@@ -28,6 +27,7 @@ The aim of this project is to showcase the global popularity of international mu
 - [Region/Artists](#region)
 - [Collection](#collection)
 - [Credits](#credits)
+- [Ethical](#ethical)
 - [Contact](#contact)
 
 ## Installations
@@ -78,7 +78,7 @@ here is our example of the (Import, Api_key, Channel ID)
     - ` <div id="map"></div> `
 
 ## DataSources
-Youtube API: 
+The Datasource that we used to get the information in order to visualize our artist metrics, markers and outlined 5 different regions was Youtube API.
 
 ## Interaction
 To interact with our project we invite you to click in the following link (xxxxx) and you will experience our map display with the 5 different regions and 4 markers per region where you can click in any marker and inmediately see the artist metric information with their respective headshot, if you click back in the same marker it will zoom out and you can repeat the process with any region and marker you would like to get inform from.
@@ -117,12 +117,14 @@ To interact with our project we invite you to click in the following link (xxxxx
 ## Collection
 Here is a brief review of our Data Collection Process from collection the data to overall visualization map.
 
-<img src="images\Data Collection Process.png"  style="width:800px"> <hr>
+<img src="images\Data Collection Process.png"  style="width:700px"> <hr>
 
 
 ## Credits
 The research support to make this challenge succesful comes from edX Tutors, Chat Gpt, AskBCS, Teachers, TA, Google, [Youtube link](https://www.youtube.com/watch?v=SwSbnmqk3zY) Max Popper, David Castano, Kimani Phillips
 
+## Ethical
+This project is created based on public artist information that any person could get access from youtube.com. we as a creators are managing the data with ethical maner not exposing any extra information that a normal person could get access to.
 
 ## Contact
 If there are any questions of concerns, we can be reached at:
