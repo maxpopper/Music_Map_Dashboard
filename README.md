@@ -1,7 +1,7 @@
 # <center> Music Map Dashboard </center>
 
 ## Website
-[Website](http://127.0.0.1:3000/index.html)
+[Website](https://127.0.0.1:3000/index.html](https://maxpopper.github.io/Music_Map_Dashboard/)
 
 ## Description
 This project aims to showcase the global popularity of international music, transcending borders and continents like never before. We aim to spotlight some of the biggest artists from five different regions and provide context for their popularity.
