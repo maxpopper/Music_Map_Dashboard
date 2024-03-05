@@ -14,7 +14,7 @@ The aim of this project is to showcase the global popularity of international mu
 - UK
 - South Korea
 
-<img src="images\Overall_map.png"  style="width:800px">
+<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Overall_map.png"  style="width:800px">
 
 ### <strong> Artist Metric Example:  </center> </strong>
 
