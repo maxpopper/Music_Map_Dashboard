@@ -123,7 +123,7 @@ To interact with our project we invite you to click in the following link (xxxxx
 ## Collection
 Here is a brief review of our Data Collection Process from collection the data to overall visualization map.
 
-<img src="images\Data Collection Process.png"  style="width:700px"> <hr>
+<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Data%20Collection%20Process.png"  style="width:700px"> <hr>
 
 
 ## Credits
