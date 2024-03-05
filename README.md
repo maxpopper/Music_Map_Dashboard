@@ -18,7 +18,7 @@ The aim of this project is to showcase the global popularity of international mu
 
 ### <strong> Artist Metric Example:  </center> </strong>
 
-<img src="(https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Badbunny_Map.png)" style="width:800px">
+<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Badbunny_Map.png" style="width:800px">
 
 ## Table of Contents
 - [Installations](#installations)
