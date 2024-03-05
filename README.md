@@ -80,7 +80,7 @@ here is our example of the (Import, Api_key, Channel ID)
 
 ## Presentation
 In this seccion you can find the presentation of our project that you can download it and explore it by yourself.
-[Download PDF](./Project_3/Presentation_PDF/Presentation.pdf)
+[Download PDF](https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/Presentation%20PDF/Presentation.pdf)
 
 
 ## DataSources
