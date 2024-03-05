@@ -1,4 +1,4 @@
-# <center> Music Map Dashboard
+# <center> Music Map Dashboard </center>
 
 ## Website
 [Website](http://127.0.0.1:3000/index.html)
