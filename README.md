@@ -1,7 +1,7 @@
 # <center> Music Map Dashboard </center>
 
 ## Website
-[Website](http://127.0.0.1:3000/index.html)
+[Website](https://maxpopper.github.io/Music_Map_Dashboard/)
 
 ## Description
 This project aims to showcase the global popularity of international music, transcending borders and continents like never before. We aim to spotlight some of the biggest artists from five different regions and provide context for their popularity.
@@ -87,7 +87,7 @@ In this section, you can find the presentation of our project that you can downl
 The Datasource that we used to get the information to visualize our artist metrics, markers and outlined 5 different regions was Youtube API.
 
 ## Interaction
-To interact with our project we invite you to click on the following link (xxxxx) and you will experience our map display with the 5 different regions and 4 markers per region where you can click on any marker and immediately see the artist metric information with their respective headshot, if you click back in the same marker it will zoom out and you can repeat the process with any region and marker you would like to get inform from.
+To interact with our project we invite you to click on the following link [Website](https://maxpopper.github.io/Music_Map_Dashboard/) and you will experience our map display with the 5 different regions and 4 markers per region where you can click on any marker and immediately see the artist metric information with their respective headshot, if you click back in the same marker it will zoom out and you can repeat the process with any region and marker you would like to get inform from.
 
 ## Region
 >Region/Artists:
