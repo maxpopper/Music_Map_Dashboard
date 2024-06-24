@@ -14,11 +14,11 @@ This project aims to showcase the global popularity of international music, tran
 - UK
 - South Korea
 
-<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Overall_map.png"  style="width:800px">
+<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/images/Overall_map.png"  style="width:800px">
 
 ### <strong> Artist Metric Example:  </center> </strong>
 
-<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Badbunny_Map.png" style="width:800px">
+<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/images/Badbunny_Map.png" style="width:800px">
 
 ## Table of Contents
 - [Installations](#installations)
