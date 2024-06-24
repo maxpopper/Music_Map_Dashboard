@@ -13,7 +13,7 @@ let La_region=
   'Average_videos_per_year': 14.1,
   'region': 'Latin America',
   'from': 'Almirante Sur, Puerto Rico',
-  'coordinates': [66.3825, 18.3763],
+  'coordinates': [18.3763, -66.3825],
   'img_code': "align='center'> <img src='images/badbunny.jpg' width='200' height='200'"},
  {'Artist': 'Peso Pluma',
   'country': 'MX',
@@ -29,7 +29,7 @@ let La_region=
   'Average_videos_per_year': 70.0,
   'region': 'Latin America',
   'from': 'Guadalajara, Mexico',
-  'coordinates': [103.3473, 20.6752],
+  'coordinates': [20.6752, -103.3473],
   'img_code': "align='center'> <img src='images/pesopluma.jpg' width='200' height='200'"},
  {'Artist': 'Feid',
   'country': 'CO',
@@ -45,7 +45,7 @@ let La_region=
   'Average_videos_per_year': 9.2,
   'region': 'Latin America',
   'from': 'Medellin, Colombia',
-  'coordinates': [75.5658, 6.2476],
+  'coordinates': [6.2476, -75.5658],
   'img_code': "align='center'> <img src='images/feid.jpg' width='200' height='200'"},
  {'Artist': 'KAROL G',
   'country': 'CO',
@@ -61,7 +61,7 @@ let La_region=
   'Average_videos_per_year': 13.4,
   'region': 'Latin America',
   'from': 'Medellin, Colombia',
-  'coordinates': [70.5658, 2.2476],
+  'coordinates': [2.2476, -70.5658],
   'img_code': "align='center'> <img src='images/karolg.png' width='200' height='200'"}];
 
 let Africa_region=
