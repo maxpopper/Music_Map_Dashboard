@@ -14,11 +14,11 @@ This project aims to showcase the global popularity of international music, tran
 - UK
 - South Korea
 
-<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/images/Overall_map.png"  style="width:800px">
+<img src="images/Overall_map.png"  style="width:800px">
 
 ### <strong> Artist Metric Example:  </center> </strong>
 
-<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/images/Badbunny_Map.png" style="width:800px">
+<img src="images/Badbunny_Map.png" style="width:800px">
 
 ## Table of Contents
 - [Installations](#installations)
@@ -123,7 +123,7 @@ To interact with our project we invite you to click on the following link [Websi
 ## Collection
 Here is a brief review of our Data Collection Process from the collection of the data to the overall visualization map.
 
-<img src="https://github.com/maxpopper/Music_Map_Dashboard/blob/main/Project%203/images/Data%20Collection%20Process.png"  style="width:700px"> <hr>
+<img src="images/Data Collection Process.png"  style="width:700px"> <hr>
 
 
 ## Credits
@@ -135,12 +135,9 @@ This project is created based on public artist information that any person could
 ## Contact
 If there are any questions or concerns, we can be reached at:
 
-> David Castano 
-- [Github: Davidcastanoe](https://github.com/Davidcastanoe)
+> David Castano [Github: Davidcastanoe](https://github.com/Davidcastanoe)
 
-> Max Popper
-- [Github: maxpopper](https://github.com/maxpopper)
+> Max Popper [Github: maxpopper](https://github.com/maxpopper)
 
-> Kimani Phillips 
-- [Github: KimaniPhillips12](https://github.com/KimaniPhillips12)
+> Kimani Phillips  [Github: KimaniPhillips12](https://github.com/KimaniPhillips12)
 
